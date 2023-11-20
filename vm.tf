@@ -16,8 +16,8 @@ resource "azurerm_windows_virtual_machine" "ojag_shrapp_vm" {
   resource_group_name = azurerm_resource_group.ojag_shrapp_rg.name
   location            = azurerm_resource_group.ojag_shrapp_rg.location
   size                = "Standard_D2s_v3"
-  admin_username      = "ojag-2019admin"
-  admin_password      = "Ominj0921ag#$esc3"  # Replace with a secure method to generate passwords
+  admin_username      = "myusername"
+  admin_password      = "myuniquepassword"  # Replace with a secure method to generate passwords
   network_interface_ids = [
     azurerm_network_interface.ojag_shrapp_nic.id,
   ]
